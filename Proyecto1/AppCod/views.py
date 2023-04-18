@@ -18,3 +18,19 @@ def lista_curso(self):
     lista = Curso.objects.all()
 
     return render(self, "lista_cursos.html", {"lista_curso": lista})
+
+def inicio (self):
+    return HttpResponse('inicio.html')
+
+def cursos (self):
+    return HttpResponse('cursos.html')
+
+def profesores (self):
+    return HttpResponse('profesores.html')
+
+def estudiantes (self):
+    return HttpResponse('estudiantes.html')
+
+def entregables (self):
+    return HttpResponse('entregables.html')
+
